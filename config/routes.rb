@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
- root 'pages#home'
-get "profile" => "pages#profile"
-get "family" => "pages#family"
+  devise_for :users
+  root 'pages#home'
+  get "profile" => "pages#profile"
+  get "family" => "pages#family"
+  resources :profiles, only: [:edit]
 
 
   # The priority is based upon order of creation: first created -> highest priority.
