@@ -17,10 +17,21 @@
         <%= f.password_field :password, class: "form-control" %>
       </div>
 
-      <div class="field">
-        <%= f.label :first_name %>
-        <%= f.text_field :first_name %>
-      </div>
+
+  <div class="field">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hometown %>
+    <%= f.text_field :hometown %>
+  </div>
 
       <div class="form-group">
         <%= f.submit "Sign up", class: "btn btn-primary" %>
