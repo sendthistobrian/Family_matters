@@ -5,4 +5,6 @@ class PagesController < ApplicationController
   end
   def family
   end
+  def about
+  end
 end

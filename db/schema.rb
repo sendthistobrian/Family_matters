@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150708231500) do
+ActiveRecord::Schema.define(version: 20150728134728) do
+
+  create_table "family_profiles", force: :cascade do |t|
+    t.string "mother"
+    t.string "father"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                        default: "", null: false
@@ -33,6 +38,9 @@ ActiveRecord::Schema.define(version: 20150708231500) do
     t.string   "profile_picture_content_type"
     t.integer  "profile_picture_file_size"
     t.datetime "profile_picture_updated_at"
+    t.string   "mother"
+    t.string   "father"
+    t.datetime "birthdate"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

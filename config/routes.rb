@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get "profile" => "pages#profile"
   get "family" => "pages#family"
+  get "about" => "pages#about"
   resources :profiles, only: [:edit]
 
 

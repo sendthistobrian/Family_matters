@@ -3,6 +3,7 @@ $navbar-inverse-bg: #090e2d;
 $navbar-inverse-link-color: orange;
 $brand-primary: #090e2d;
 $jumbotron-bg: #ffa500;
+
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
@@ -12,4 +13,53 @@ $jumbotron-bg: #ffa500;
 
 .navbar-brand {
      font-weight: bold;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+	position: relative;
+	background: image-url('IMG_1446.JPG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+}
+
+.jumbotron, {
+		background-color: rgba(255, 175, 94, 0.8);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(255, 165, 0, 0.4);
+}
+
+h3 {
+	color: white;
+}
+
+.square-image-50 {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
 }
